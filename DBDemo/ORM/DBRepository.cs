@@ -7,7 +7,7 @@ namespace DBDemo.ORM
 {
     public class DBRepository
     {
-        //Code to create database
+        //Method to create database
         public string CreateDB()
         {
             var output = "";
@@ -18,7 +18,7 @@ namespace DBDemo.ORM
             return output;
         }
 
-        //Code to create the table
+        //Method to create the table
         public string CreateTable()
         {
             try
@@ -36,7 +36,7 @@ namespace DBDemo.ORM
             }
         }
 
-        //Code to insert a record
+        //Method to insert a record
         public string InsertRecord(string task)
         {
             try
@@ -55,7 +55,7 @@ namespace DBDemo.ORM
             }
         }
 
-        //Code to retrieve all the records
+        //Method to retrieve all the records
         public string GetAllRecords()
         {
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3");
@@ -80,7 +80,7 @@ namespace DBDemo.ORM
             
         }
 
-        //Code to retrieve specific record
+        //Method to retrieve specific record
         public string GetTaskById(int id)
         {
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3");
